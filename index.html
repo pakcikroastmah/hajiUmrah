@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="grey">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">umrah/hajj App</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#pages-section">Umrah</a></li>
+                <li><a href="#days-section">Hajj</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="center-align grey lighten-5 home-section">
+        <h1 class="animated pulse">Umrah/Hajj Calculator</h1>
+        <p class="flow-text title-caption animated pulse">This is a simple web app that helps you gauge how long it will
+            take for you to save up and go for umrah and hajj</p>
+        <a class="waves-effect waves-light btn-large pages-btn margin-right-20" href="#pages-section">Umrah</a>
+        <a class="waves-effect waves-light btn-large" href="#days-section">Hajj</a>
+    </div>
+
+    <div id="pages-section" class="center-align white lighten-5 container">
+        <h1>Umrah</h1>
+        <p class="flow-text title-caption ">Find out how much you will need to save daily for you to go for Umrah in a specic amount of days.
+        </p>
+            <div class="input-field ">
+                    <input id="pages-input" type="number">
+                    <label for="pages-input">Number of days</label>
+                    <span class="helper-text">Enter the number of days you plan to save for befor going to umrah </span>
+            </div>
+        <br>
+
+        <button class="btn waves-effect waves-light btn-large calculate-btn" type="button" onclick="calculateDaysNeeded()">
+            Calculate
+                <i class="material-icons right">
+                    send</i>
+            </button>
+
+            <div class="row center-align">
+                    <div class="card-panel grey lighten-5">
+                        <span id="pages-output">Your results will display here after you click the 'Calculate' button.</span>
+                    </div>
+            </div>
+        
+    </div>
+
+
+
+    <div id="days-section" class="center-align white lighten-5 container">
+            <h1>Hajj</h1>
+            <p class="flow-text title-caption ">Find out how m you will need to save daily per for you to go for hajj in a specic amount of days.
+            </p>
+                <div class="input-field ">
+                        <input id="days-input" type="number">
+                        <label for="days-input">Number of days</label>
+                        <span class="helper-text">Enter the number of days you plan to save for Hajj </span>
+                </div>
+            <br>
+    
+            <button class="btn waves-effect waves-light btn-large calculate-btn" type="button 2" onclick="calculatePagesNeeded()">
+                Calculate
+                    <i class="material-icons right">
+                        send</i>
+                </button>
+    
+                <div class="row center-align">
+                        <div class="card-panel grey lighten-5">
+                            <span id="days-output">Your results will display here after you click the 'Calculate' button.</span>
+                        </div>
+                </div>
+            
+        </div>
+<div>
+    <footer class="page-footer grey">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">About App</h5>
+                  <p class="grey-text text-lighten-4">This is a coding project that was done during june holidays.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">My Other App</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://pakcikroastmah.github.io/Calculator/" target="blank">Basic Calculator</a></li>
+                 
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2019 Code Hero Project by Muhammad Talha
+              <a class="grey-text text-lighten-4 right" href="https://github.com/pakcikroastmah">My Github</a>
+            
+              </div>
+            </div>
+          </footer>
+</div>
+
+
+
+
+
+<script src="main.js"></script>
+
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+    
+
+
+</body>
+
+</html>
